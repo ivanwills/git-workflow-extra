@@ -21,26 +21,23 @@ our ($name)   = $PROGRAM_NAME =~ m{^.*/(.*?)$}mxs;
 our %option;
 
 sub run {
+    my ($self) = @_;
+
     get_options(
         \%option,
         'quiet|q',
     );
 
-    my @files = map { /^#\s+modified:\s+(.*)\n/ }
-        grep {/^#\s+modified:\s+/ }
-        $workflow->git->status;
-
-    for my $file (@files) {
-        my $diff = $workflow->git->diff('--ignore-all-space', $file);
-        chomp $diff;
-
-        if ( !$diff ) {
-            warn "\t$file\n" unless $option{quiet};
-            $workflow->git->checkout($file);
-        }
-    }
+    # get newest tag
+    # get rev-parse --all -n 100
+    # stop processing when commit is tag
 
     return;
+}
+
+sub newest_tag {
+    my ($self) = @_;
+
 }
 
 1;
