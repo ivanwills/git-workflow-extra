@@ -68,15 +68,15 @@ __DATA__
 
 =head1 NAME
 
-git-cows - checkout whitespace only changed files
+git-since-release - checkout whitespace only changed files
 
 =head1 VERSION
 
-This documentation refers to git-cows version 0.8
+This documentation refers to git-since-release version 0.8
 
 =head1 SYNOPSIS
 
-   git-cows [option]
+   git-since-release [option]
 
  OPTIONS:
   -q --quiet    Suppress notifying of files changed
@@ -84,11 +84,11 @@ This documentation refers to git-cows version 0.8
   -v --verbose  Show more detailed option
      --VERSION  Prints the version information
      --help     Prints this help information
-     --man      Prints the full documentation for git-cows
+     --man      Prints the full documentation for git-since-release
 
 =head1 DESCRIPTION
 
-C<git-cows> resets any files that only contain whitespace changes.
+C<git-since-release> resets any files that only contain whitespace changes.
 This is done by finding all files modified (as shown by a C<git status>) and
 run them through C<git diff -w>. If any file results in no out put is shown
 (i.e. the changes are only white spaces) the file is then C<git checkout>ed to
