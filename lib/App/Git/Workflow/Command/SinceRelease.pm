@@ -29,6 +29,8 @@ sub run {
     );
 
     # get newest tag
+    my $tag = $self->newest_tag;
+
     # get rev-parse --all -n 100
     # stop processing when commit is tag
 
@@ -37,7 +39,17 @@ sub run {
 
 sub newest_tag {
     my ($self) = @_;
+    my ($max_tag, $max_time) = ('', 0);
 
+    for my $tag ($workflow->git->tag) {
+        my $details = $workflow->commit_details($tag);
+        if ($details->{time} > $max_time) {
+            $max_time = $details->{time};
+            $max_tag = $tag;
+        }
+    }
+
+    return $max_tag;
 }
 
 1;
