@@ -33,6 +33,16 @@ sub run {
 
     # get rev-parse --all -n 100
     # stop processing when commit is tag
+    my $count = 0;
+    my %seen;
+    for my $id (reverse $workflow->git->rev_parse("--all")) {
+        next if $seen{$id}++;
+        my $details = $workflow->commit_details($id);
+        next if $details->{time} < $tag;
+        $count++;
+    }
+
+    print "Ahead by $count commit" . ($count != 1 ? 's' : '') . "\n" if !$option{quiet} || $count;
 
     return;
 }
@@ -49,7 +59,7 @@ sub newest_tag {
         }
     }
 
-    return $max_tag;
+    return $max_time;
 }
 
 1;
