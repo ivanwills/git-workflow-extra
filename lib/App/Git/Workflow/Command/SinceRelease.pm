@@ -30,6 +30,7 @@ sub run {
 
     # get newest tag
     my $tag = $self->newest_tag;
+    return if $option{quiet} && !$tag;
 
     # get rev-parse --all -n 100
     # stop processing when commit is tag
