@@ -17,22 +17,14 @@ sub run {
         {
             ARGV => [],
             mock => [
-                [
-                    "#  modified: file1\n",
-                    "#  modified: file2\n",
-                ],
-                "file1 differs\n",
-                "",
-                undef,
+                [qw/0.1 0.2/],
             ],
             STD => {
                 OUT => '',
-                ERR => "\tfile2\n",
+                ERR => '',
             },
             option => {},
             name   => 'Default',
-        },
-        {
         },
     );
 
