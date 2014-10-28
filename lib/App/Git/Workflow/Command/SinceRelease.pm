@@ -104,6 +104,10 @@ changes and makes others work easier.
 
 Executes the git workflow command
 
+=head2 C<newest_tag ()>
+
+Returns the most recently created tag
+
 =head1 DIAGNOSTICS
 
 =head1 CONFIGURATION AND ENVIRONMENT
