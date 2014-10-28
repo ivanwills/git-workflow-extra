@@ -8,7 +8,11 @@ my $builder = Module::Build->new(
     dist_author       => 'Ivan Wills <ivan.wills@gmail.com>',
     dist_version_from => 'lib/App/Git/Workflow/Command/SinceRelease.pm',
     requires          => {
-        'perl'             => 5.008,
+        'perl'                         => '5.006',
+        'App::Git::Workflow'           => '0.8',
+        'App::Git::Workflow::Command'  => '0.8',
+        'Path::Class'                  => 0,
+        'Test::Git::Workflow::Command' => '0.8',
     },
     build_requires => {
         'Test::More'       => 0,
