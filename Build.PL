@@ -15,7 +15,7 @@ my $builder = Module::Build->new(
         'Test::Git::Workflow::Command' => '0.8',
     },
     build_requires => {
-        'Test::More'       => 0,
+        'Test::More'       => '0.88',
         'Test::NoWarnings' => 0,
     },
     add_to_cleanup     => [ 'module-*' ],
