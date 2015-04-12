@@ -3,28 +3,27 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
-    module_name       => 'module',
+    module_name       => 'App-Git-Workflow-Extra',
     license           => 'perl',
     dist_author       => 'Ivan Wills <ivan.wills@gmail.com>',
-    dist_version_from => 'lib/App/Git/Workflow/Command/SinceRelease.pm',
+    dist_version_from => 'lib/App/Git/Workflow/Extra.pm',
     requires          => {
-        'perl'                         => '5.006',
-        'App::Git::Workflow'           => '0.8',
-        'App::Git::Workflow::Command'  => '0.8',
-        'Path::Class'                  => 0,
-        'Test::Git::Workflow::Command' => '0.8',
+        'perl'                                      => '5.006',
+        'App::Git::Workflow'                        => '0.8',
+        'App::Git::Workflow::Command::SinceRelease' => '0.8',
+        'Path::Class'                               => 0,
     },
     build_requires => {
         'Test::More'       => '0.88',
         'Test::NoWarnings' => 0,
     },
-    add_to_cleanup     => [ 'module-*' ],
+    add_to_cleanup     => [ 'App-Git-Workflow-Extra-*' ],
     create_makefile_pl => 'traditional',
     create_license     => 1,
     meta_merge => {
         resources => {
-            repository => 'git://github.com/ivanwills/module.git',
-            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=module',
+            repository => 'git://github.com/ivanwills/App-Git-Workflow-Extra.git',
+            bugtracker => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-Git-Workflow-Extra',
         },
     },
 );

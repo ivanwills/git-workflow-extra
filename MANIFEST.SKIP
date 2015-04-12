@@ -60,4 +60,18 @@ Debian_CPANTS.txt
 \bnytprof*
 
 # Avoid archives of this distribution
-\bmodule-[\d\.\_]+
+\bApp-Git-Workflow-Extra-[\d\.\_]+
+
+# Avoid prove saved state file
+.prove
+
+# Other files of interest
+[.].*[.]tag$
+errors.err
+.travis.yml
+vim.sh
+vrc.yml
+tmp*
+temp*
+^MYMETA\.json$
+tags
