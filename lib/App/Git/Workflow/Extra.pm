@@ -8,13 +8,12 @@ package App::Git::Workflow::Extra;
 
 use strict;
 use warnings;
-use version;
 use Carp;
 use Data::Dumper qw/Dumper/;
 use English qw/ -no_match_vars /;
 use base qw/Exporter/;
 
-our $VERSION = version->new('0.0.1');
+our $VERSION = 0.1;
 
 1;
 
