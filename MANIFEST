@@ -4,6 +4,7 @@ lib/App/Git/Workflow/Extra.pm
 LICENSE
 Makefile.PL
 MANIFEST
+META.json
 META.yml
 README.pod
 t/00-load.t
