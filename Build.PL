@@ -12,6 +12,7 @@ my $builder = Module::Build->new(
         'App::Git::Workflow'                           => '0.8',
         'App::Git::Workflow::Command::BranchConflicts' => 0,
         'App::Git::Workflow::Command::SinceRelease'    => 0,
+        'App::Git::Workflow::Command::Take'            => 0,
     },
     build_requires => {
         'Test::More'     => '0.88',
