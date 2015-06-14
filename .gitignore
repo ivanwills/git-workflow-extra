@@ -1,6 +1,6 @@
 .*.sw[ponxmn]
 Debian_CPANTS.txt
-module-*
+App-Git-Workflow-Extra-*
 .vimtagsdisplay
 tags
 Build
@@ -17,4 +17,6 @@ nytprof*
 .prove
 tmp*
 *~
+vim.sh
+temp*
 errors.err
