@@ -11,6 +11,7 @@ my $builder = Module::Build->new(
         'perl'                                         => '5.006',
         'App::Git::Workflow'                           => '0.8',
         'App::Git::Workflow::Command::BranchConflicts' => 0,
+        'App::Git::Workflow::Command::Cat'             => 0,
         'App::Git::Workflow::Command::SinceRelease'    => 0,
         'App::Git::Workflow::Command::Take'            => 0,
     },
