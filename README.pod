@@ -2,8 +2,9 @@
 
 =head1 App::Git::Workflow::Extra
 
-This builds on git-workflow-tools to add more commands which may have less
-broad appeal.
+This builds on L<App::Git::Workflow> to add more commands which may have less
+broad appeal. It does this by depending on all the seperate extra commands
+which get installed along with this module.
 
 =head1 INSTALLATION
 
