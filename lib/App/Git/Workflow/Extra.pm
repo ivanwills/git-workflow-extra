@@ -31,12 +31,13 @@ This documentation refers to App::Git::Workflow::Extra version 0.0.1
 
    use App::Git::Workflow::Extra;
 
-   # Brief but working code example(s) here showing the most common usage(s)
-   # This section will be as far as many users bother reading, so make it as
-   # educational and exemplary as possible.
-
+   # Does nothing
 
 =head1 DESCRIPTION
+
+This builds on L<App::Git::Workflow> to add more commands which may have less
+broad appeal. It does this by depending on all the seperate extra commands
+which get installed along with this module.
 
 =head1 SUBROUTINES/METHODS
 
