@@ -36,7 +36,7 @@ This documentation refers to App::Git::Workflow::Extra version 0.0.3
 =head1 DESCRIPTION
 
 This builds on L<App::Git::Workflow> to add more commands which may have less
-broad appeal. It does this by depending on all the seperate extra commands
+broad appeal. It does this by depending on all the separate extra commands
 which get installed along with this module.
 
 =head1 SUBROUTINES/METHODS
