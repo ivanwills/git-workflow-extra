@@ -10,10 +10,10 @@ my $builder = Module::Build->new(
     requires          => {
         'perl'                                         => '5.006',
         'App::Git::Workflow'                           => '1.0.6',
-        'App::Git::Workflow::Command::BranchConflicts' => 0,
-        'App::Git::Workflow::Command::Cat'             => 0,
-        'App::Git::Workflow::Command::SinceRelease'    => 0,
-        'App::Git::Workflow::Command::Take'            => 0,
+        'App::Git::Workflow::Command::BranchConflicts' => '0.6',
+        'App::Git::Workflow::Command::Cat'             => '0.2',
+        'App::Git::Workflow::Command::SinceRelease'    => '0.4',
+        'App::Git::Workflow::Command::Take'            => '0.5',
     },
     build_requires => {
         'Test::More'     => '0.88',
